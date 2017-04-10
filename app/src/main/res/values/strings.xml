@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">A7.3</string>
+    <string name="nameLabel">Name :</string>
+    <string name="ageLabel">Age :</string>
+    <string name="photoLabel">Employee Photo</string>
+    <string name="nameHint">Enter the employee name</string>
+    <string name="ageHint">Enter the employee age</string>
+    <string name="photo">Select the photo</string>
+</resources>
