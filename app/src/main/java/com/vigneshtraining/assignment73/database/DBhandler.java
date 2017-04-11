@@ -65,20 +65,6 @@ public class DBhandler {
         }
     }
 
-    public int getFullCount(String table, String where) {
-        int no = 0;
-        Cursor cursor = db.query(false, table, null, where, null, null, null, null, null);
-        try {
-            if (cursor != null) {
-                cursor.moveToFirst();
-                no = cursor.getCount();
-                cursor.close();
-            }
-        } finally {
-            cursor.close();
-        }
-        return no;
-    }
 
 
 
