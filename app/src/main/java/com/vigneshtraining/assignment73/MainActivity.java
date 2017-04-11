@@ -38,8 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
         handleDB= DBhandler.getInstance(this);
 
-
-        retriveEmployee();
+        try {
+            retriveEmployee();
+        }catch (Exception ex){
+            Toast.makeText(this,"There is no sufficient memory do the operation, please extend the memory.",Toast.LENGTH_LONG).show();
+        }
 
 
     }
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private void addEmployee(){
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.img);
         byte[] photo=getBytes(bitmap);
-        handleDB.addEmployee("Vigneshwaran",23,photo);
+        handleDB.addEmployee("Vigneshwaran",99,photo);
         retriveEmployee();
     }
 

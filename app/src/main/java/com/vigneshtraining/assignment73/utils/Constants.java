@@ -7,7 +7,7 @@ package com.vigneshtraining.assignment73.utils;
 public class Constants {
     public static final String DATABASE_NAME = "data.db.assignments";
 
-    public static final int DATABASE_VERSION =2 ;
+    public static final int DATABASE_VERSION =3 ;
 
     public static final String EMPLOYEE_TABLE_NAME="employee_record_table" ;
 
